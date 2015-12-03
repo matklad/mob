@@ -289,7 +289,7 @@ impl Connection {
             // they are first created. we always want to make sure we are 
             // listening for the hang up event. we will additionally listen
             // for readable and writable events later on.
-            interest: EventSet::hup(),
+            interest: EventSet::none(),
 
             send_queue: Vec::new(),
         }
